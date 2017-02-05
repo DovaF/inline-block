@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пример исспользования сетки на inline-block</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="target-densitydpi=device-dpi">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/grid-inline-block.css">
+	<style>
+		header,
+		section,
+		footer {
+			padding: 1.5rem;
+		}
+		a,
+		span {
+			font-size: 1.6rem;
+		}
+		.block {
+			border: 0.1rem solid #000;
+			padding: 1rem;
+			font-size: 1.6rem;
+		}
+		.block--sm {
+			height: 5rem;
+		}
+		.block--md {
+			height: 100px;
+		}
+		.block--lg {
+			height: 150px;
+		}
+		.block--mg {
+			height: 400px;
+		}
+		.content {
+			padding: 1rem;
+			font-size: 1.6rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="grid grid--size grid--col24 grid--gv15">
+			<div class="box">
+				<div class="cell cell--col8">
+					<div class="block block--sm">
+						<span>Логотип</span>
+					</div>
+				</div> 
+				<div class="cell cell--col16">
+					<div class="grid grid--size grid--col24 grid--gv5">
+						<div class="box box--right">
+							<div class="cell">
+								<div class="content">
+									<span>Телефон:</span><br>
+									<a href="tel:+380951112233">+38 (095) 111-22-33</a>
+								</div>
+							</div>
+							<div class="cell">
+								<div class="content">
+									<span>E-mail:</span><br>
+									<a href="mailto:company@gmail.com">company@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cell cell--col6">
+					<div class="block">
+						<a href="index.html">Пункт меню 1</a>
+					</div>
+				</div>
+				<div class="cell cell--col6">
+					<div class="block">
+						<a href="index.html">Пункт меню 2</a>
+					</div>
+				</div>
+				<div class="cell cell--col6">
+					<div class="block">
+						<a href="index.html">Пункт меню 3</a>
+					</div>
+				</div>
+				<div class="cell cell--col6">
+					<div class="block">
+						<a href="index.html">Пункт меню 4</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="grid grid--size grid--col24">
+			<div class="box">
+				<div class="cell">
+					<a href="index.html">Хлебная крошка 1</a>
+					<span> / </span>
+					<a href="index.html">Хлебная крошка 2</a>
+					<span> / </span>
+					<span>Хлебная крошка 3</span>
+				</div>
+				<div class="cell cell--col24">
+					<h1>Заголовок страницы</h1>
+				</div>
+			</div>
+		</div>
+		<div class="grid grid--size grid--col24 grid--gv15">
+			<div class="box">
+				<div class="cell cell--col4 cell--sm24">
+					<div class="grid grid--size grid--col24 grid--gv15">
+						<div class="box">
+							<div class="cell cell--col24 cell--sm12">
+								<div class="block block--md">
+									<span>Банер 1</span>
+								</div>
+							</div>
+							<div class="cell cell--col24 cell--sm12">
+								<div class="block block--md">
+									<span>Банер 2</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cell cell--col20 cell--sm24">
+					<div class="grid grid--size grid--col24 grid--v15">
+						<div class="box">
+							<div class="cell cell--col24">
+								<div class="block block--mg">
+									<span>Основной текст страницы</span>
+								</div>
+							</div>
+							<div class="cell cell--col24">
+								<div class="block block--md">
+									<span>Дополнительная информация</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="grid grid--size grid--col24 grid--g15">
+			<div class="box box--justify">
+				<div class="cell">
+					<span>@ 2016 Все права защищены</span>
+				</div>
+				<div class="cell">
+					<span>Разработчик: </span>
+					<a href="mailto:babenkoma@gmail.com">babenkoma@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
